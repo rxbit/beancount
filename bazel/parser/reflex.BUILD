@@ -16,6 +16,7 @@ configure_make(
     env = {
         # Use PIC so we can link Python extension modules to this.
         "CXXFLAGS": "-fPIC",
+        "AR": "",
     },
     lib_source = "@reflex//:all",
 )

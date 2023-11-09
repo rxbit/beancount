@@ -14,7 +14,7 @@ configure_make(
     name = "mpdecimal",
     out_static_libs = ["libmpdec.a", "libmpdec++.a"],
     # Use PIC so we can link Python extension modules to this.
-    env = {"CFLAGS": "-fPIC", "CXXFLAGS": "-fPIC"},
+    env = {"CFLAGS": "-fPIC", "CXXFLAGS": "-fPIC", "AR": ""},
     configure_in_place = True,
     lib_source = "//:allsrcs",
 )
